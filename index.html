@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annika Petzold — Architecture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Corner Nav -->
+  <nav class="corner-nav">
+    <a href="#" onclick="openPanel('bio'); return false;">Bio</a>
+    <a href="#" onclick="openPanel('skills'); return false;">Skills</a>
+    <a href="#" onclick="openPanel('cv'); return false;">CV</a>
+    <a href="#" onclick="openPanel('contact'); return false;">Contact</a>
+  </nav>
+
+  <!-- Landing -->
+  <main class="landing">
+
+    <div class="name-block">
+      <h1 class="site-name">Annika Petzold</h1>
+      <div class="name-subnav">
+        <a href="#" onclick="openPanel('bio'); return false;">Bio</a>
+        <a href="#" onclick="openPanel('skills'); return false;">Skills</a>
+        <a href="#" onclick="openPanel('cv'); return false;">CV</a>
+        <a href="#" onclick="openPanel('contact'); return false;">Contact</a>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <a href="hemp-house.html" class="project-thumb">
+        <div class="thumb-img">
+          <img src="images/01 Fanelsa Modell.jpg" alt="Hemp House and Rural Renovation">
+        </div>
+        <span class="thumb-title">Hemp House and Rural Renovation</span>
+      </a>
+      <a href="mucart.html" class="project-thumb">
+        <div class="thumb-img">
+          <img src="images/DSC08251-2.jpg" alt="MucArt – School of Performing Arts">
+        </div>
+        <span class="thumb-title">MucArt – School of Performing Arts</span>
+      </a>
+      <a href="rio-park.html" class="project-thumb">
+        <div class="thumb-img">
+          <img src="images/FOTO1.png" alt="Pocket Park on a Supermarket in Rio de Janeiro">
+        </div>
+        <span class="thumb-title">Pocket Park · Rio de Janeiro</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Backdrop -->
+  <div class="panel-backdrop" id="backdrop" onclick="closePanel()"></div>
+
+  <!-- About Panel -->
+  <aside class="about-panel" id="about-panel">
+
+    <div class="panel-header">
+      <span class="panel-name">Annika Petzold</span>
+      <button class="panel-close" onclick="closePanel()">×</button>
+    </div>
+
+    <!-- Bio -->
+    <section class="panel-section" id="bio">
+      <h2>Bio</h2>
+      <p>Architecture student at the Technische Universität München, currently on exchange at the Universidade Federal do Rio de Janeiro. My work moves between the rural and the urban, the technical and the spatial — from hemp-built community structures in Franconia to performing arts schools in Munich and pocket parks above parking lots in Rio de Janeiro.</p>
+      <p style="margin-top: 1rem;">Before architecture, I studied Economics & Business Administration at Fernuniversität Hagen, a background that informs how I think about architecture as infrastructure — social, ecological, and economic. I am drawn to projects where building becomes a catalyst for something larger than itself.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="panel-section" id="skills">
+      <h2>Skills &amp; Software</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Software</h3>
+          <ul>
+            <li>Archicad <span>design + documentation</span></li>
+            <li>Rhinoceros <span>3D modelling</span></li>
+            <li>Grasshopper <span>parametric design</span></li>
+            <li>Adobe Illustrator <span>drawing + graphics</span></li>
+            <li>Adobe InDesign <span>layout + portfolio</span></li>
+            <li>Adobe Photoshop <span>rendering + collage</span></li>
+            <li>Microsoft Suite <span>documentation</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>German <span>native</span></li>
+            <li>English <span>C1</span></li>
+            <li>French <span>B2</span></li>
+            <li>Spanish <span>B2</span></li>
+            <li>Portuguese <span>B1</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="panel-section" id="cv">
+      <h2>CV</h2>
+
+      <p class="cv-section-label">Education</p>
+
+      <div class="cv-entry">
+        <span class="cv-date">2025 – now</span>
+        <div class="cv-content">
+          <h4>Exchange Year</h4>
+          <p>Universidade Federal do Rio de Janeiro — Grade 1,0</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2023 – now</span>
+        <div class="cv-content">
+          <h4>B.Arch</h4>
+          <p>Technische Universität München — Grade 1,9 · Deutschlandstipendium</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2021 – 2024</span>
+        <div class="cv-content">
+          <h4>B.Sc. Economics &amp; Business Administration</h4>
+          <p>Fernuniversität Hagen — Grade 1,8 · Deutschlandstipendium</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2021</span>
+        <div class="cv-content">
+          <h4>Abitur</h4>
+          <p>Schiller Gymnasium Hof — Grade 1,0</p>
+        </div>
+      </div>
+
+      <p class="cv-section-label">Work Experience</p>
+
+      <div class="cv-entry">
+        <span class="cv-date">Apr – Jul 2025</span>
+        <div class="cv-content">
+          <h4>Tutor for Architectural Sketching</h4>
+          <p>Chair Prof. Uta Graff, TUM — sketching, collage, architectural representation</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">Oct 2024 – Jul 2025</span>
+        <div class="cv-content">
+          <h4>Student Assistant · Marketing &amp; Eventmanagement</h4>
+          <p>Venture Lab Built Environment · UnternehmerTUM — design guidelines, Instagram, space curation</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">May – Jul 2023</span>
+        <div class="cv-content">
+          <h4>Erasmus Internship · Digital Marketing &amp; Eventmanagement</h4>
+          <p>World Class Bcn, Barcelona — social media campaigns, video content</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">May – Aug 2022</span>
+        <div class="cv-content">
+          <h4>Architecture Intern</h4>
+          <p>Architektur+ — renovation consulting, floor plan layouts, construction supervision</p>
+        </div>
+      </div>
+
+      <p class="cv-section-label">Additional</p>
+
+      <div class="cv-entry">
+        <span class="cv-date">2024 – now</span>
+        <div class="cv-content">
+          <h4>Board Member</h4>
+          <p>Architecture Student Association, TUM</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2023 – 2025</span>
+        <div class="cv-content">
+          <h4>Eventmanagement · Initiative Nachhölzer</h4>
+          <p>Mental health events, photography competition, TUM collaboration</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2024</span>
+        <div class="cv-content">
+          <h4>Open Data City Officer Certification</h4>
+          <p>EU co-funded — smart cities and open data</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2023</span>
+        <div class="cv-content">
+          <h4>Makers of Tomorrow Certification</h4>
+          <p>Federal Chancellery — start-up culture and entrepreneurship</p>
+        </div>
+      </div>
+      <div class="cv-entry">
+        <span class="cv-date">2022</span>
+        <div class="cv-content">
+          <h4>Digital Insights</h4>
+          <p>Microsoft Certificate — AI ethics and implementation</p>
+        </div>
+      </div>
+
+      <a class="cv-download" href="260529_CV.pdf" download>Download CV (PDF)</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="panel-section" id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:annika.petzold@tum.de">annika.petzold@tum.de</a>
+        </li>
+        <li>
+          <span class="contact-label">Phone</span>
+          <span>+49 1515 5382075</span>
+        </li>
+        <li>
+          <span class="contact-label">Location</span>
+          <span>Munich · Rio de Janeiro</span>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/annika-petzold-b56a72252/" target="_blank" rel="noopener">annika-petzold</a>
+        </li>
+      </ul>
+    </section>
+
+  </aside>
+
+  <script>
+    function openPanel(section) {
+      document.getElementById('about-panel').classList.add('open');
+      document.getElementById('backdrop').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (section) {
+        setTimeout(() => {
+          const el = document.getElementById(section);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 350);
+      }
+    }
+
+    function closePanel() {
+      document.getElementById('about-panel').classList.remove('open');
+      document.getElementById('backdrop').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closePanel();
+    });
+  </script>
+
+</body>
+</html>
